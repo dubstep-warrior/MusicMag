@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Featured | MusicMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- The topnav div serves as a menu navigation bar for the website. HTML elements in the navigation bar include button links to other pages as well as a menu icon displayed on smaller viewport devices. The structure of the menu bar was copied from w3schools, integrating the menu icon into it,and the structure was enhanced to add an additional dropdown menu to specific anchor points in the tech webpage. -->
+
+    <div class="topnav">
+        <div class="menu-icon">
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+        </div>
+        <a class="logo" href="index.html"><img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo"></a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a class="active-tech" href="tech.html">Tech</a>
+        <div class="tech-dropdown">
+            <a class="tech-hardware" href="tech.html#hardware">HARDWARE</a>
+            <a class="tech-software" href="tech.html#software">SOFTWARE</a>
+        </div>
+        <a class="active" href="features.html">Features</a>
+        <a href="top10.html">Top 10</a>
+        <a href="video.html">Video</a>
+         
+    </div>
+
+    <!-- The return to top btn div serves as a button for users to easily scroll back to the top of the page with one click. The JS logic behind the feature is the scrollFunction function. The JS logic was learnt from w3schools while the CSS was tailored to fit the design of the webpage. -->
+
+    <div class="return-to-top-btn">
+        <div class="return-to-top-symbol">&#8963;</div>
+    </div>
+
+    <br>
+
+    <!-- The webpage container is a div that contains all the news articles in this feature section. It serves as a container that contains all the elements after the navigation bar and before the footer. It contains a features-main-highlight-container div that serves as a container for the main highlighted featured article in this section. Inside this div is two container divs for the news article image and related text elements(News title, news description, news author and news date.) -->
+
+    <div class="webpage-container">
+        <div class="features-main-highlight-container">
+            <div class="features-main-highlight-photo">
+                <img src="Images/Features/ElectricBlockalooFestivalMinecraft.png" alt="Electric Blockaloo poster">
+            </div>
+            <div class="features-main-highlight-textbox">
+                <div class="text-title">Electric Blockaloo Festival to host Minecraft Virtual Rave, Complete
+                    Lineup revealed
+                </div>
+                <div class="text-para">
+                    Electric Blockaloo has revealed the it's complete lineup as the biggest digital music festival of
+                    all time. As electronic dance music fans join the rapidly growing online raving community, the stage
+                    set up for the community has never been bigger. Electric Blockaloo stands out among the rest of
+                    other virtual raves with a gigantic lineup with features 65 artist hosted stages and 850 other
+                    performers.
+                </div>
+                <div class="text-author">BRIAN BONAVOGLIA </div>
+                <div class="text-date"> JUNE 11, 2020</div>
+            </div>
+        </div>
+
+        <!-- The featured-news-row div is a container holding 3 features-container-teaser divs. Each holds a news article, containing two divs for the news article image and related text elements(News title, news description, news author and news date)  -->
+
+        <div class="featured-news-row">
+            <div class="features-container-teaser">
+                <div class="features-container-photo">
+                    <img src="Images/Features/UMF.jpg" alt="UMF Aerial Shot">
+                </div>
+                <div class="features-container-text">
+                    <div class="text-title">Movement Detroit: Cancellation of Ultra Music Festival 2021. 2022
+                        Dates Released
+                    </div>
+                    <div class="text-para">
+                        Miami's Ultra Music Festival has officially been cancelled less than a week following Movement
+                        Detroit's announcement. Due to the current pandemic situation, the management behind Ultra were
+                        left with no choice but to reschedule the festival to March 2022. Following the cancellation of
+                        the festival, the management has sent out official cancellation via emails and published a
+                        statement on their social media accounts.
+                    </div>
+                    <div class="text-author">BRIAN BONAVOGLIA </div>
+                    <div class="text-date"> FEBRUARY 22, 2021</div>
+                </div>
+            </div>
+            <div class="features-container-teaser">
+                <div class="features-container-photo">
+                    <img src="Images/Features/LostinDreams.png" alt="Lost in Dreams brand graphic">
+                </div>
+                <div class="features-container-text">
+                    <div class="text-title">New Music Festival & Record Label: Lost in Dreams, Launched by
+                        Insomniac
+                    </div>
+                    <div class="text-para">
+                        Insomniac has announced the launch of their latest label Lost in Dreams which will operate as a
+                        music festival as well as a record label under the Insomniac Music Group. The label is set to
+                        highlight and sign genres of Future Bass and Melodic Dubstep. Insomniac is an electronic
+                        music event promoter in the scene and is best known as the organiser of one of the biggest music
+                        festivals in the world, Electric Daisy Carnival (EDC).
+                    </div>
+                    <div class="text-author">BRIAN BONAVOGLIA </div>
+                    <div class="text-date"> FEBRUARY 24, 2021</div>
+                </div>
+
+            </div>
+            <div class="features-container-teaser">
+                <div class="features-container-photo">
+                    <img src="Images/Features/UKNightClubs.jpg" alt="Aerial shot in nightclub">
+                </div>
+                <div class="features-container-text">
+                    <div class="text-title">Surviving behind the Scenes, UK's nightclubs amidst the Coronavirus
+                        Pandemic
+                    </div>
+                    <div class="text-para">
+                        Across the UK, many nightclubs and live music venues have been quiet for a year and not
+                        operating due to the coronavirus pandemic. Owners come in to their nightclubs only to see empty
+                        dancefloors and minimum operating costs are slowly closing down nightclubs one by one. Needing
+                        to reinvent themselves to survive, DJ Mag checks on some of UK's nightclubs to find out what
+                        they've been up to this past year.
+                    </div>
+                    <div class="text-author">CHIARA WILKINSON </div>
+                    <div class="text-date">JANUARY 27,2021</div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <!-- The normal-feature-news-container is a div that contains the remaining news articles. Each news article is held in a features-normal-container div, where each div holds two more container div, one for the news article image and another one for the related text elements.(News title, news description, news author and news date)-->
+
+        <div class="normal-feature-news-container">
+            <div class="features-normal-container">
+                <div class="features-normal-photo">
+                    <img src="Images/Features/LiveMusicIndustry.jpg" alt="Crowd in Live Set">
+                </div>
+                <div class="features-normal-textbox">
+                    <div class="text-title">'The Live Music Industry Requires Continuous Support Ahead of
+                        Planned Reopening'
+                    </div>
+                    <div class="text-para">
+                        Sector spokepeople have come forth and mention that the support of the live music industry must
+                        continue ahead of planned reopening. After nearly a year of nightclubs staying silent, UK Prime
+                        Minster Boris Johnson gave hope to the industry in a press conference on 22nd February, stating
+                        that the live music operations across the country could reopen as soon as 21st June. If that
+                        isn't hyped I don't know what is.
+                    </div>
+                    <div class="text-author">AMY FIELDING </div>
+                    <div class="text-date">FEBRUARY 23,2021</div>
+                </div>
+            </div>
+
+            <div class="features-normal-container">
+                <div class="features-normal-photo">
+                    <img src="Images/Features/ADE.jpg" alt="ADE Entrance">
+                </div>
+                <div class="features-normal-textbox">
+                    <div class="text-title">Amsterdam Dance Event (ADE) holding its 2020 virtual iconic dance
+                        music convention
+                    </div>
+                    <div class="text-para">
+                        While the Amsterdam Dance Event (ADE) will not be held physically in October, ADE has confirmed
+                        its plans to hold a virtual event. A spokesperson for the largest and most iconic dance music
+                        conventioned announced in an official statement that the conference will be held in an
+                        'online-first' format, combining it's extended digital programs with limited physical elements.
+                    </div>
+                    <div class="text-author">BRIAN BONAVOGLIA </div>
+                    <div class="text-date"> JUNE 27, 2020</div>
+                </div>
+            </div>
+
+            <div class="features-normal-container">
+                <div class="features-normal-photo">
+                    <img src="Images/Features/JapaneseCityPop.jpg" alt="Japanese street shot">
+                </div>
+                <div class="features-normal-textbox">
+                    <div class="text-title">The Surging Growth of Japanese City Pop in a Global and Online Context
+                    </div>
+                    <div class="text-para">
+                        with the help of Youtbe algorithms, as well as Tiktok memes, an American-influenced vintage
+                        Japanese song has made it's way to the headlines of music. The trend says more about Western
+                        perceptions of the East as opposed to the other way. This viral success of "Mayonaka no Door /
+                        Stay with me" has brought another surge of international interest to city pop. A loosely defined
+                        Japanese genre influenced by R&B and jazz dating back to the 1980s.
+                    </div>
+                    <div class="text-author">CAT ZHANG </div>
+                    <div class="text-date"> FEBRUARY 24, 2021</div>
+                </div>
+            </div>
+
+            <div class="features-normal-container">
+                <div class="features-normal-photo">
+                    <img src="Images/Features/RapProducersSampleSnitching.png" alt="Rappers">
+                </div>
+                <div class="features-normal-textbox">
+                    <div class="text-title">The Legal Battles of Rap Producers Amongst the Culture of Sample Snitching
+                    </div>
+                    <div class="text-para">
+                        The culture of Sample snitching has been known to get not just rap producers, but even producers
+                        of other genres into legal troubles. This culture, which has been around for decades, was
+                        nurtured by the act of sample snitching unintentionally in the midst of online chatter and
+                        community interaction. Sample snitching is where users publicly indentify and discuss unlicensed
+                        samples that can potentially get their favourite producer at risk. Especially so if they've used
+                        an unlicensed sample.
+                    </div>
+                    <div class="text-author">MOSI REEVES </div>
+                    <div class="text-date">JANUARY 21, 2021</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <br><br>
+
+    </div>
+
+    <!-- The popup-container div serves as a container that holds the popup for a subscription form. When the user clicks on the newsletter link in the footer. The popup form is displayed. Inside the popup-box div contains a container for a graphic image for design purpose, as well as a container for all text/input elements -->
+
+    <div class="popup-container">
+        <div class="popup-box">
+            <div class="popup-imagebox">
+                <img src="Images/Footer/NewsletterGraphic.jpg" alt="Music Art Graphic">
+            </div>
+            <div class="popup-textbox">
+                <div class="popup-textbox-small-container">
+                    <div class="logo-box">
+                        <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo">
+                    </div>
+                    <div class="popup-close-box" onclick="closePopup()">
+                        &#10005;
+                    </div>
+                    <div class="popup-textbox-text">
+                        Sign up for our Weekly Newsletter
+                    </div>
+                </div>
+                <div class="popup-textbox-big-container">
+                    <label for="name">Name :</label>
+                    <input id="name" class="input-field-1" name = "name" type="text">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input id="email" class="input-field-2" name = "email" type="text">
+                </div>
+                <div class="popup-textbox-button-container">
+                    <input type="submit" onclick="subscribedMessage()" value="Suscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The footer-container div, held inside the footer tag, is a container that holds various containers that align the elements inside them in a row. -->
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <a class="logo" href="index.html">
+                    <img src="Images/MusicMag/logo_transparent.png" alt="MusicMag Logo">
+                </a>
+            </div>
+            <div class="footer-row">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="tech.html">Tech</a>
+                <a href="features.html">Features</a>
+                <a href="top10.html">Top 10</a>
+                <a href="video.html">Video</a>
+            </div>
+            <div class="footer-row">
+                <a href="#newsletter" onclick="popup()">Newsletter</a>
+                <a href="#advertising">Advertising</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="socialMediaLink" class="footer-row">
+                <a href="#facebook">
+                    <img src="Images/Footer/facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="#instagram">
+                    <img src="Images/Footer/instagram.jpg" alt="Instagram Logo">
+                </a>
+                <a href="#twitter">
+                    <img src="Images/Footer/twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="#youtube">
+                    <img src="Images/Footer/youtube.png" alt="Youtube Logo">
+                </a>
+            </div>
+            <div id="termsAndConditions" class="footer-row">
+                <p>
+                    Please read these conditions carefully before using the
+                    MusicMag website. By using the MusicMag website, you signify your agreement to be bound by these
+                    conditions. In addition, when you use any current or future MusicMag service, you will also be
+                    subject to the terms, guidelines and conditions applicable to that service. ("Terms").
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

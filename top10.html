@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Top 10 | MusicMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- The topnav div serves as a menu navigation bar for the website. HTML elements in the navigation bar include button links to other pages as well as a menu icon displayed on smaller viewport devices. The structure of the menu bar was copied from w3schools, integrating the menu icon into it,and the structure was enhanced to add an additional dropdown menu to specific anchor points in the tech webpage. -->
+
+    <div class="topnav">
+        <div class="menu-icon">
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+        </div>
+        <a class="logo" href="index.html"><img src="Images/MusicMag/logoTransparentNoBorder.png"
+                alt="MusicMag's Logo"></a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a class="active-tech" href="tech.html">Tech</a>
+        <div class="tech-dropdown">
+            <a class="tech-hardware" href="tech.html#hardware">HARDWARE</a>
+            <a class="tech-software" href="tech.html#software">SOFTWARE</a>
+        </div>
+        <a href="features.html">Features</a>
+        <a class="active" href="top10.html">Top 10</a>
+        <a href="video.html">Video</a>
+
+    </div>
+
+    <!-- The return to top btn div serves as a button for users to easily scroll back to the top of the page with one click. The JS logic behind the feature is the scrollFunction function. The JS logic was learnt from w3schools while the CSS was tailored to fit the design of the webpage. -->
+
+    <div class="return-to-top-btn">
+        <div class="return-to-top-symbol">&#8963;</div>
+    </div>
+
+
+
+    <br>
+    <!-- This is a category-container div that holds the title of the webpage. Not every page has its title with the given CSS styling unless it would further compliment the design and theme of the webpage. Other webpages without a title are self explanatory with the menu link names and adding a title may disrupt the flow of the webpage layout design. -->
+
+    <div class="category-container">
+        <div class="category-text-container">
+            Top 10 DJs
+        </div>
+    </div>
+
+    <!-- The rank-container div is a container that holds the container for the top DJs. Each rank-inner-container contains a div to contain an image, and a div to contain the DJ's text name and a button. The rank-container also holds a spotify-playlist-container div that contains an embedded spotify playlist of the DJ. Clicking anywhere inside the inner container triggers the spotifyPlaylist() function. -->
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(1)">
+            <div class="rank-image">
+                <img src="Images/Top10/DavidGuetta.jpeg" alt="David Guetta">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    DAVID GUETTA
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify1" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbDs5HMNanrc" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(2)">
+            <div class="rank-image">
+                <img src="Images/Top10/DimitriVegas&LikeMike.jpg" alt="Dimitri Vegas and Like Mike">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    DIMITRI VEGAS & LIKE MIKE
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify2" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4Fbdh7T2WzS" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(3)">
+            <div class="rank-image">
+                <img src="Images/Top10/MartinGarrix.jpg" alt="Martin Garrix">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    MARTIN GARRIX
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify3" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX94qaYRnkufr" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(4)">
+            <div class="rank-image">
+                <img src="Images/Top10/ArminVanBuuren.jpg" alt="Armin Van Buuren">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    ARMIN VAN BUUREN
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify4" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3sNH1cCGwYU" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(5)">
+            <div class="rank-image">
+                <img src="Images/Top10/Alok.jpg" alt="Alok">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    ALOK
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify5" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZUWZIwpqsT3" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(6)">
+            <div class="rank-image">
+                <img src="Images/Top10/DonDiablo.jpg" alt="Don Diablo">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    DON DIABLO
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify6" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0Jugk8" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(7)">
+            <div class="rank-image">
+                <img src="Images/Top10/Afrojack.jpg" alt="Afrojack">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    AFROJACK
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify7" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2Ihqne" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(8)">
+            <div class="rank-image">
+                <img src="Images/Top10/OliverHeldens.jpg" alt="Oliver Heldens">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    OLIVER HELDENS
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify8" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3a5z1u" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(9)">
+            <div class="rank-image">
+                <img src="Images/Top10/SteveAoki.jpeg" alt="Steve Aoki">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    STEVE AOKI
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify9" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWVnzqQyu8XB" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <div class="rank-container">
+        <div class="rank-inner-container" onclick="spotifyPlaylist(10)">
+            <div class="rank-image">
+                <img src="Images/Top10/TimmyTrumpet.jpg" alt="Timmy Trumpet">
+            </div>
+
+            <div class="rank-textbox">
+                <div class="rank-name">
+                    TIMMY TRUMPET
+                </div>
+                <div class="rank-button">
+                    <div class="button">
+                        &#8964;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="spotify10" class="spotify-playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0iuIFO" width="300" height="380" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+
+    <!-- The popup-container div serves as a container that holds the popup for a subscription form. When the user clicks on the newsletter link in the footer. The popup form is displayed. Inside the popup-box div contains a container for a graphic image for design purpose, as well as a container for all text/input elements -->
+
+    <div class="popup-container">
+        <div class="popup-box">
+            <div class="popup-imagebox">
+                <img src="Images/Footer/NewsletterGraphic.jpg" alt="Music Art Graphic">
+            </div>
+            <div class="popup-textbox">
+                <div class="popup-textbox-small-container">
+                    <div class="logo-box">
+                        <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo">
+                    </div>
+                    <div class="popup-close-box" onclick="closePopup()">
+                        &#10005;
+                    </div>
+                    <div class="popup-textbox-text">
+                        Sign up for our Weekly Newsletter
+                    </div>
+                </div>
+                <div class="popup-textbox-big-container">
+                    <label for="name">Name :</label>
+                    <input id="name" class="input-field-1" name="name" type="text">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input id="email" class="input-field-2" name="email" type="text">
+                </div>
+                <div class="popup-textbox-button-container">
+                    <input type="submit" onclick="subscribedMessage()" value="Suscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The footer-container div, held inside the footer tag, is a container that holds various containers that align the elements inside them in a row. -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <a class="logo" href="index.html">
+                    <img src="Images/MusicMag/logo_transparent.png" alt="MusicMag Logo">
+                </a>
+            </div>
+            <div class="footer-row">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="tech.html">Tech</a>
+                <a href="features.html">Features</a>
+                <a href="top10.html">Top 10</a>
+                <a href="video.html">Video</a>
+            </div>
+            <div class="footer-row">
+                <a href="#newsletter" onclick="popup()">Newsletter</a>
+                <a href="#advertising">Advertising</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="socialMediaLink" class="footer-row">
+                <a href="#facebook">
+                    <img src="Images/Footer/facebook.png" alt="Facebook logo">
+                </a>
+                <a href="#instagram">
+                    <img src="Images/Footer/instagram.jpg" alt="Instagram logo">
+                </a>
+                <a href="#twitter">
+                    <img src="Images/Footer/twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="#youtube">
+                    <img src="Images/Footer/youtube.png" alt="Youtube Logo">
+                </a>
+            </div>
+            <div id="termsAndConditions" class="footer-row">
+                <p>
+                    Please read these conditions carefully before using the
+                    MusicMag website. By using the MusicMag website, you signify your agreement to be bound by these
+                    conditions. In addition, when you use any current or future MusicMag service, you will also be
+                    subject to the terms, guidelines and conditions applicable to that service. ("Terms").
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>

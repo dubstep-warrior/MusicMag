@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Videos | MusicMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="displaySection(0)">
+     
+    <!-- The topnav div serves as a menu navigation bar for the website. HTML elements in the navigation bar include button links to other pages as well as a menu icon displayed on smaller viewport devices. The structure of the menu bar was copied from w3schools, integrating the menu icon into it,and the structure was enhanced to add an additional dropdown menu to specific anchor points in the tech webpage. -->
+
+    <div class="topnav">
+        <div class="menu-icon">
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+        </div>
+        <a class="logo" href="index.html"><img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo"></a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a class="active-tech" href="tech.html">Tech</a>
+        <div class="tech-dropdown">
+            <a class="tech-hardware" href="tech.html#hardware">HARDWARE</a>
+            <a class="tech-software" href="tech.html#software">SOFTWARE</a>
+        </div>
+        <a href="features.html">Features</a>
+        <a href="top10.html">Top 10</a>
+        <a class="active" href="video.html">Video</a>
+         
+    </div>
+
+     <!-- The return to top btn div serves as a button for users to easily scroll back to the top of the page with one click. The JS logic behind the feature is the scrollFunction function. The JS logic was learnt from w3schools while the CSS was tailored to fit the design of the webpage. -->
+
+    <div class="return-to-top-btn">
+        <div class="return-to-top-symbol">&#8963;</div>
+    </div>
+
+    <!-- The webpage container is a div that contains all the news/article videos in this video section. It serves as a container that contains all the elements after the navigation bar and before the footer. Inside this div contains 9 containers(main-highlight-video-container class), each that holds a different video, their respective titles and description. The webpage container also holds divs for 'buttons' that are linked to each video container. These buttons are shaped in the form of news articles with an image and news title. Using CSS and JS, when a user clicks on the news articles corresponding to the video content, the main-highlight-video-container div with the corresponding id will be displaed, while the rest will be hidden.
+    The inspiration behind this webpage design is from the video section in pitchfork.com. However, the planning and implementation of code was done using my knowledge of HTML, CSS and JS.   -->
+
+    <div id="video-webpage" class="webpage-container">
+        <div class="category-container">
+            <div id="videoCategory" class="category-text-container">
+                Video
+            </div>
+            <span id="loading">--</span>
+
+        </div>
+
+         <!-- Video containers that are displayed only when the corresponding news articles are clicked -->
+
+        <div id="0" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/LywPo1auPWA"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    How to Produce with a Talkbox featuring David Guetta
+                </div>
+                <div class="video-description">
+                    In an episode of the DJMag Originals, David Guetta showed us from his home how he built a
+                    French-house inspired track from scratch using a talkbox in Ableton Live.
+                </div>
+            </div>
+        </div>
+
+        <div id="1" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/6_TsG8_6EL8"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    Shawn Mendes Reveals his Creative Production Process
+                </div>
+                <div class="video-description">
+                    In an episode of Pitchfork's Critical Breakthroughs, Shawn Mendes shares his creative process in
+                    the studio.
+                </div>
+            </div>
+        </div>
+
+        <div id="2" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/mmdUfwPltn4"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    Mike WiLL Made-It Breaks Down How He Produces for Kendrick Lamar & Beyoncé
+                </div>
+                <div class="video-description">
+                    In an episode of Pitchfork's Critical Breakthroughs, Mike WILL Made-It talks about the
+                    approaches he takes towards producing Kendrick Lamar's "DNA", the struggles in working on viral
+                    hits such as Miley Cyrus's "We Can't Stop", and the work environment with Beyoncé.
+                </div>
+            </div>
+        </div>
+
+        <div id="3" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/Uui1Kjg0pmY"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    Ellie Goulding Explains Her Voice in the Production Process
+                </div>
+                <div class="video-description">
+                    In an episode of Pitchfork's Critical Breakthroughs, Ellie Goulding discusses the sounds and
+                    lyrics that led to various breakthroughs and her greatest hits.
+                </div>
+            </div>
+        </div>
+
+        <div id="4" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/qxFRWttsEwY"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    Third Sons's Exploratory Approach to Music Production
+                </div>
+                <div class="video-description">
+                    In an episode of the DJMag series 'How I Made', Third Son presents the creative process behind
+                    his track "Minicloud" using his eurorack modular.
+                </div>
+            </div>
+        </div>
+
+        <div id="5" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/Oi2gcCAv8-w"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    How Martin Garrix & Dean made 'Used to Love'
+                </div>
+                <div class="video-description">
+                    In an episode of the Martin Garrix Show, Martin Garrix shows us the studio where he worked with
+                    Dean and how one of his greatest hits "Used to Love" came to life working with the team.
+                </div>
+            </div>
+        </div>
+
+        <div id="6" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/Jpchz4fLc9U"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    How Brooks Broke into the Dance Scene remixing 'Dusk Till Dawn' by ZAYN
+                </div>
+                <div class="video-description">
+                    At Dancefair 2018, Brooks held a masterclass showing how he produced a remix for ZAYN turning
+                    out to be one of his greatest productions: "Dusk Till Dawn".
+                </div>
+            </div>
+        </div>
+
+        <div id="7" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/kFQfx4VNdRo"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    The Production Value Behind Printwork in London's Nightclubs scene
+                </div>
+                <div class="video-description">
+                    In an episode of the DJMag Originals, Printworks London shows the nightlife making behind the
+                    scenes and how their production work is widely famed as one of the most forward-thinking within
+                    global club culture.
+                </div>
+            </div>
+        </div>
+
+        <div id="8" class="main-highlight-video-container">
+            <div class="video-container">
+                <iframe width="850" height="470" src="https://youtube.com/embed/lGKlIJsz7bM"></iframe>
+            </div>
+            <div class="video-textbox-container">
+                <div class="video-title">
+                    Deconstructing the Production Behind Childish Gambino's 'Redbone' with Ludwig Göransson
+                </div>
+                <div class="video-description">
+                    In this series of Deconstructed by Genius, Ludwig Göransson discusses his eccentric approaches
+                    to the collaborative production on Childish Gambino's "Redbone", earning them the Platinum
+                    certification.
+                </div>
+            </div>
+        </div>
+
+        <!-- This video-gallery-container is the div that holds all the containers for the news article 'buttons'. Each article is held inside a video-box-container div and using JS, the news article clicked will lead to its corresponding content being displayed.  -->
+
+        <div class="video-gallery-container">
+            <div class="video-box-row">
+                <div id="video0" class="video-box-container" onclick="displaySection(0)">
+                    <div class="video-picture">
+                        <img src="Images/Video/DavidGuetta.jpg" alt="David Guetta in Studio">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            How to Produce with a Talkbox featuring David Guetta
+                        </div>
+                        <div class="text-author">DJ MAG</div>
+                        <div class="text-date">AUGUST 08, 2020</div>
+                    </div>
+                </div>
+                <div id="video1" class="video-box-container" onclick="displaySection(1)">
+                    <div class="video-picture">
+                        <img src="Images/Video/ShawnMendes.jpg" alt="Shawn Mendes with guitar">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            Shawn Mendes Reveals his Creative Production Process
+                        </div>
+                        <div class="text-author">PITCHFORK</div>
+                        <div class="text-date">DECEMBER 30, 2020</div>
+                    </div>
+                </div>
+                <div id="video2" class="video-box-container" onclick="displaySection(2)">
+                    <div class="video-picture">
+                        <img src="Images/Video/MikeWillMadeIt.jpg" alt="MikeWillMadeIt in his studio">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            Mike WiLL Made-It Breaks Down How He Produces for Kendrick Lamar & Beyoncé                            </div>
+                        <div class="text-author">PITCHFORK</div>
+                        <div class="text-date">DECEMBER 12, 2020</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box-row">
+                <div id="video3" class="video-box-container" onclick="displaySection(3)">
+                    <div class="video-picture">
+                        <img src="Images/Video/EllieGoulding.jpg" alt="Ellie Goulding performing">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            Ellie Goulding Explains Her Voice in the Production Process
+                        </div>
+                        <div class="text-author">PITCHFORK</div>
+                        <div class="text-date">AUGUST 11, 2020</div>
+                    </div>
+                </div>
+                <div id="video4" class="video-box-container" onclick="displaySection(4)">
+                    <div class="video-picture">
+                        <img src="Images/Video/ThirdSons.jpg" alt="Third Son with synthesizers">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            Third Sons's Exploratory Approach to Music Production
+                        </div>
+                        <div class="text-author">DJ MAG</div>
+                        <div class="text-date">AUGUST 12, 2020</div>
+                    </div>
+                </div>
+                <div id="video5" class="video-box-container" onclick="displaySection(5)">
+                    <div class="video-picture">
+                        <img src="Images/Video/MartinGarrixAndDean.jpg" alt="Martin Garrix and Dean on yacht">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            How Martin Garrix & Dean made 'Used to Love'
+                        </div>
+                        <div class="text-author">MARTIN GARRIX</div>
+                        <div class="text-date">NOVEMBER 26, 2019</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box-row">
+                <div id="video6" class="video-box-container" onclick="displaySection(6)">
+                    <div class="video-picture">
+                        <img src="Images/Video/Brooks.jpeg" alt="Brooks stage shot">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            How Brooks Broke into the Dance Scene remixing 'Dusk Till Dawn' by ZAYN
+                        </div>
+                        <div class="text-author">BROOKS</div>
+                        <div class="text-date">MARCH 24, 2018</div>
+                    </div>
+                </div>
+                <div id="video7" class="video-box-container" onclick="displaySection(7)">
+                    <div class="video-picture">
+                        <img src="Images/Video/Printwork.jpg" alt="Nightclub lighting with Printworks">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            The Production Value Behind Printwork in London's Nightclubs scene
+                        </div>
+                        <div class="text-author">DJ MAG</div>
+                        <div class="text-date">FEBRUARY 10, 2020</div>
+                    </div>
+                </div>
+                <div id="video8" class="video-box-container" onclick="displaySection(8)">
+                    <div class="video-picture">
+                        <img src="Images/Video/LudwigGoransson.jpg" alt="Ludwig Goransson in studio">
+                    </div>
+                    <div class="video-textbox">
+                        <div class="video-textbox-title">
+                            Deconstructing the Production Behind Childish Gambino's 'Redbone' with Ludwig Göransson
+                        </div>
+                        <div class="text-author">GENIUS</div>
+                        <div class="text-date">MAY 11, 2017</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- The popup-container div serves as a container that holds the popup for a subscription form. When the user clicks on the newsletter link in the footer. The popup form is displayed. Inside the popup-box div contains a container for a graphic image for design purpose, as well as a container for all text/input elements -->
+
+    <div class="popup-container">
+        <div class="popup-box">
+            <div class="popup-imagebox">
+                <img src="Images/Footer/NewsletterGraphic.jpg" alt="Music Art Graphic">
+            </div>
+            <div class="popup-textbox">
+                <div class="popup-textbox-small-container">
+                    <div class="logo-box">
+                        <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="">
+                    </div>
+                    <div class="popup-close-box" onclick="closePopup()">
+                        &#10005;
+                    </div>
+                    <div class="popup-textbox-text">
+                        Sign up for our Weekly Newsletter
+                    </div>
+                </div>
+                <div class="popup-textbox-big-container">
+                    <label for="name">Name :</label>
+                    <input id="name" class="input-field-1" name = "name" type="text">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input id="email" class="input-field-2" name = "email" type="text">
+                </div>
+                <div class="popup-textbox-button-container">
+                    <input type="submit" onclick="subscribedMessage()" value="Suscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The footer-container div, held inside the footer tag, is a container that holds various containers that align the elements inside them in a row. -->
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <a class="logo" href="index.html">
+                    <img src="Images/MusicMag/logo_transparent.png" alt="MusicMag Logo">
+                </a>
+            </div>
+            <div class="footer-row">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="tech.html">Tech</a>
+                <a href="features.html">Features</a>
+                <a href="top10.html">Top 10</a>
+                <a href="video.html">Video</a>
+            </div>
+            <div class="footer-row">
+                <a href="#newsletter" onclick="popup()">Newsletter</a>
+                <a href="#advertising">Advertising</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="socialMediaLink" class="footer-row">
+                <a href="#facebook">
+                    <img src="Images/Footer/facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="#instagram">
+                    <img src="Images/Footer/instagram.jpg" alt="Instagram Logo">
+                </a>
+                <a href="#twitter">
+                    <img src="Images/Footer/twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="#youtube">
+                    <img src="Images/Footer/youtube.png" alt="Youtube Logo">
+                </a>
+            </div>
+            <div id="termsAndConditions" class="footer-row">
+                <p>
+                    Please read these conditions carefully before using the
+                    MusicMag website. By using the MusicMag website, you signify your agreement to be bound by these
+                    conditions. In addition, when you use any current or future MusicMag service, you will also be
+                    subject to the terms, guidelines and conditions applicable to that service. ("Terms").
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

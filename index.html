@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>MusicMag | The Home of Music Enthusiasts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showSlides(slideIndex)">
+
+    <!-- The topnav div serves as a menu navigation bar for the website. HTML elements in the navigation bar include button links to other pages as well as a menu icon displayed on smaller viewport devices. The structure of the menu bar was copied from w3schools, integrating the menu icon into it,and the structure was enhanced to add an additional dropdown menu to specific anchor points in the tech webpage. -->
+
+    <div class="topnav">
+        <div class="menu-icon">
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+        </div>
+        <a class="logo" href="index.html"><img src="Images/MusicMag/logoTransparentNoBorder.png"
+                alt="MusicMag's Logo"></a>
+        <a class="active" href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a class="active-tech" href="tech.html">Tech</a>
+        <div class="tech-dropdown">
+            <a class="tech-hardware" href="tech.html#hardware">HARDWARE</a>
+            <a class="tech-software" href="tech.html#software">SOFTWARE</a>
+        </div>
+        <a href="features.html">Features</a>
+        <a href="top10.html">Top 10</a>
+        <a href="video.html">Video</a>
+
+    </div>
+
+
+    <!-- The return to top btn div serves as a button for users to easily scroll back to the top of the page with one click. The JS logic behind the feature is the scrollFunction function. The JS logic was learnt from w3schools while the CSS was tailored to fit the design of the webpage. -->
+
+    <div class="return-to-top-btn">
+        <div class="return-to-top-symbol">&#8963;</div>
+    </div>
+
+    <!-- The slideshow-container div serves as the container for the carousel. Inside the carousel includes elements for images as well as captions for the specific slide(slides fade div). Dots to indicate the slide the carousel is displayed are in the dots div. The JS logic behind the feature is the showSlides function. The JS logic was copied from w3schools.com while the HTML and CSS were tailored to fit the stipulated design for the wireframe, as well as to fit the overall theme of the webpage. -->
+
+    <div class="slideshow-container">
+        <a href="">
+            <div class="slides fade">
+                <img src="Images/Carousel/Alison-wonderland-wonderverse.png" alt="Alison on stage">
+                <div class="caption">Alison embarks on Wave for a new experience: "Wonderverse"</div>
+            </div>
+        </a>
+        <a href="">
+            <div class="slides fade">
+                <img src="Images/Carousel/Prison-feature_Header.png" alt="Prisoner playing instrument">
+                <div class="caption">UK prison unlocks talent and changes lives with music</div>
+            </div>
+        </a>
+        <a href="">
+            <div class="slides fade">
+                <img src="Images/Carousel/Dave-punk-split.png" alt="Dave Punk on stage">
+                <div class="caption">The legendary French duo Dave Punk departs after 28 years</div>
+            </div>
+        </a>
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- This #features div is a container holding the h2 element that serves as a title for the webpage's section, as well as hold the containers that the news articles are in. -->
+
+    <div id="features" class="container">
+        <div class="header">
+            <h2>Features</h2>
+        </div>
+
+        <br>
+
+        <!-- The features-row-one and features-row-two div are containers that contain the news articles in a row. features-container-teaser is a container holding a container for the news image, and another container for the news title  -->
+
+        <div class="features-row-one">
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/UMF.jpg" alt="UMF Aerial shot">
+                    </div>
+                    <div class="features-container-text-title">Movement Detroit: Cancellation of Ultra Music Festival
+                        2021. 2022
+                        Dates Released </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/LostinDreams.png" alt="Lost in Dreams brand graphic">
+                    </div>
+                    <div class="features-container-text-title">New Music Festival & Record Label: Lost in Dreams,
+                        Launched by
+                        Insomniac</div>
+
+                </div>
+            </a>
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/UKNightClubs.jpg" alt="Aerial shot in nightclub">
+                    </div>
+                    <div class="features-container-text-title">Surviving behind the Scenes, UK's nightclubs amidst the
+                        Coronavirus
+                        Pandemic</div>
+                </div>
+            </a>
+        </div>
+        <br>
+        <div class="features-row-two">
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/LiveMusicIndustry.jpg" alt="Crowd in Live set">
+                    </div>
+                    <div class="features-container-text-title">'The Live Music Industry requires continuous support
+                        ahead of
+                        planned reopening'</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/ADE.jpg" alt="ADE Entrance">
+                    </div>
+                    <div class="features-container-text-title"> Amsterdam Dance Event (ADE) holding its 2020 virtual
+                        iconic dance
+                        music convention</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="features-container-teaser">
+                    <div class="features-container-photo">
+                        <img src="Images/Features/ElectricBlockalooFestivalMinecraft.png"
+                            alt="Electric Blockaloo poster">
+                    </div>
+                    <div class="features-container-text-title">Electric Blockaloo Festival to host Minecraft Virtual
+                        Rave, Complete
+                        Lineup revealed </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <br>
+
+    <!-- This #latest-news div is a container holding the h2 element that serves as a title for the webpage's section, as well as hold the containers that the news articles are in. -->
+
+    <div id="latest-news" class="container">
+        <div class="header">
+            <h2>Latest News</h2>
+        </div>
+
+
+        <!-- The latest-news-container is a div that holds the news articles. Every latest-news-container-teaser is a div container holding a news article containing a container for images as well as another container for the text elements. (News title, news author and date.) -->
+
+        <div class="latest-news-container">
+            <a href="">
+                <div class="latest-news-container-teaser">
+                    <div class="latest-news-container-photo">
+                        <img src="Images/LatestNews/OliverHeldensReleaseLN.jpg" alt="Oliver Helden portrait">
+                    </div>
+                    <div class="latest-news-container-text">
+                        <div class="text-title">Oliver Heldens Releases His Greatly Hyped Single: "Never Look Back"
+                        </div>
+                        <div class="text-author">By: BRIAN BONAVOGLIA</div>
+                        <div class="text-date">FEBRUARY 22, 2021 </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="latest-news-container-teaser">
+                    <div class="latest-news-container-photo">
+                        <img src="Images/LatestNews/UKNightclubsReopeningTrial.jpg"
+                            alt="Aerial shot of empty nightclub">
+                    </div>
+                    <div class="latest-news-container-text">
+                        <div class="text-title">Safe Reopening Trials to be Conducted by UK Nightclubs with Volunteers
+                            Starting April </div>
+                        <div class="text-author">By: DJ Mag Staff</div>
+                        <div class="text-date"> FEBRUARY 26, 2021</div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="latest-news-container-teaser">
+                    <div class="latest-news-container-photo">
+                        <img src="Images/LatestNews/TchamiCurbiCollab.jpg" alt="Make Amends album graphic">
+                    </div>
+                    <div class="latest-news-container-text">
+                        <div class="text-title">Tchami Reaches out to Curbi for Groovy Collaboration: "Make Amends"
+                        </div>
+                        <div class="text-author">By: BRIAN BONAVOGLIA</div>
+                        <div class="text-date"> FEBRUARY 17, 2021</div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="latest-news-container-teaser">
+                    <div class="latest-news-container-photo">
+                        <img src="Images/LatestNews/CashCashCollab.jpg" alt="Cash Cash group">
+                    </div>
+                    <div class="latest-news-container-text">
+                        <div class="text-title">Cash Cash Joins Hands with Wiz Khalifa & Lukas Graham for His First
+                            Release:
+                            "Too Late"</div>
+                        <div class="text-author">By: BRIAN BONAVOGLIA</div>
+                        <div class="text-date">FEBRUARY 22, 2021</div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="latest-news-container-teaser">
+                    <div class="latest-news-container-photo">
+                        <img src="Images/LatestNews/SpotifyHiFi.jpg" alt="Spotify board on building">
+                    </div>
+                    <div class="latest-news-container-text">
+                        <div class="text-title">Spotify to Release Premium Streaming Service "Spotify HiFi" Later this
+                            Year
+                        </div>
+                        <div class="text-author">By: DECLAN MCGLYNN</div>
+                        <div class="text-date"> FEBRUARY 22, 2021</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- The popup-container div serves as a container that holds the popup for a subscription form. When the user clicks on the newsletter link in the footer. The popup form is displayed. Inside the popup-box div contains a container for a graphic image for design purpose, as well as a container for all text/input elements -->
+
+    <div class="popup-container">
+        <div class="popup-box">
+            <div class="popup-imagebox">
+                <img src="Images/Footer/NewsletterGraphic.jpg" alt="Music Art Graphic">
+            </div>
+            <div class="popup-textbox">
+                <div class="popup-textbox-small-container">
+                    <div class="logo-box">
+                        <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag logo">
+                    </div>
+                    <div class="popup-close-box" onclick="closePopup()">
+                        &#10005;
+                    </div>
+                    <div class="popup-textbox-text">
+                        Sign up for our Weekly Newsletter
+                    </div>
+                </div>
+                <div class="popup-textbox-big-container">
+                    <label for="name">Name :</label>
+                    <input id="name" class="input-field-1" name="name" type="text">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input id="email" class="input-field-2" name="email" type="text">
+                </div>
+                <div class="popup-textbox-button-container">
+                    <input type="submit" onclick="subscribedMessage()" value="Suscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The footer-container div, held inside the footer tag, is a container that holds various containers that align the elements inside them in a row. -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <a class="logo" href="index.html">
+                    <img src="Images/MusicMag/logo_transparent.png" alt="MusicMag Logo">
+                </a>
+            </div>
+            <div class="footer-row">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="tech.html">Tech</a>
+                <a href="features.html">Features</a>
+                <a href="top10.html">Top 10</a>
+                <a href="video.html">Video</a>
+            </div>
+            <div class="footer-row">
+                <a href="#newsletter" onclick="popup()">Newsletter</a>
+                <a href="#advertising">Advertising</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="socialMediaLink" class="footer-row">
+                <a href="#facebook">
+                    <img src="Images/Footer/facebook.png" alt="Facebook logo">
+                </a>
+                <a href="#instagram">
+                    <img src="Images/Footer/instagram.jpg" alt="Instagram logo">
+                </a>
+                <a href="#twitter">
+                    <img src="Images/Footer/twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="#youtube">
+                    <img src="Images/Footer/youtube.png" alt="Youtube Logo">
+                </a>
+            </div>
+            <div id="termsAndConditions" class="footer-row">
+                <p>
+                    Please read these conditions carefully before using the
+                    MusicMag website. By using the MusicMag website, you signify your agreement to be bound by these
+                    conditions. In addition, when you use any current or future MusicMag service, you will also be
+                    subject to the terms, guidelines and conditions applicable to that service. ("Terms").
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

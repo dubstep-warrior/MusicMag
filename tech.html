@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Tech News | MusicMag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="videoSound()">
+
+    <!-- The topnav div serves as a menu navigation bar for the website. HTML elements in the navigation bar include button links to other pages as well as a menu icon displayed on smaller viewport devices. The structure of the menu bar was copied from w3schools, integrating the menu icon into it,and the structure was enhanced to add an additional dropdown menu to specific anchor points in the tech webpage. -->
+
+    <div class="topnav">
+        <div class="menu-icon">
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+            <div class="menu-icon-2"></div>
+        </div>
+        <a class="logo" href="index.html"><img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo"></a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a id="active" class="active-tech" href="tech.html">Tech</a>
+        <div class="tech-dropdown">
+            <a class="tech-hardware" href="tech.html#hardware">HARDWARE</a>
+            <a class="tech-software" href="tech.html#software">SOFTWARE</a>
+        </div>
+        <a href="features.html">Features</a>
+        <a href="top10.html">Top 10</a>
+        <a href="video.html">Video</a>
+         
+    </div>
+
+     <!-- The return to top btn div serves as a button for users to easily scroll back to the top of the page with one click. The JS logic behind the feature is the scrollFunction function. The JS logic was learnt from w3schools while the CSS was tailored to fit the design of the webpage. -->
+
+    <div class="return-to-top-btn">
+        <div class="return-to-top-symbol">&#8963;</div>
+    </div>
+
+    <!-- The video-container div is a container that holds an autoplay replay video on replay as a graphic banner. The container also holds another div container that holds related text element to compliment the graphic element. The inspiration behind this banner design was from a promotional video banner in apple.com's website. The animation, and execution of code however, was not copied and was done using my own knowledge of HTML, CSS and JS. -->
+
+    <div class="video-container">
+        <video id="techVideo" class="video" autoplay loop muted>
+            <source src="Videos/ElectronicMusicPerformance1.mp4" type="video/mp4">
+        </video>
+
+        <div id="techVideo1" class="text-container">
+            <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo">
+            <div class="text-container-row-one">Empower Your Sound</div>
+            <div class="text-container-row-two">With Tech</div>
+        </div>
+
+    </div>
+
+    <!-- This is a category-container div that holds the title of the webpage. Not every page has its title with the given CSS styling unless it would further compliment the design and theme of the webpage. Other webpages without a title are self explanatory with the menu link names and adding a title may disrupt the flow of the webpage layout design. -->
+
+    <div class="category-container">
+        <div class="category-text-container">
+            Tech
+        </div>
+    </div>
+
+        <!-- The tech container div is a container that holds are the related tech news. Each section(Hardware/Software) are given two rows that hold the news articles in different ways. The first news row contains a big article followed by a smaller article, done using CSS. The second row contains 3 equally distanced and aligned news articles. -->
+
+    <div class="tech-container">
+        <a id="hardware"></a>
+        <div class="header">
+            <h2>Hardware</h2>
+        </div>
+
+        <div class="tech-row-one">
+            <div class="tech-container-teaser-big">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/KorgNewHeadphones.jpg" alt="Korg Headphones">
+                </div>
+                <div class="tech-container-text">Korg Announces Brand New Noise Cancelling Headphones for DJs and Live Performers </div>
+            </div>
+            <div class="tech-container-teaser-small">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/KorgDrumlogue.jpeg" alt="Korg Drumlogue">
+                </div>
+                <div class="tech-container-text">Korg Announces Brand New Analogue-Digital Hybrid Drum Machine</div>
+            </div>
+        </div>
+        <div class="tech-row-two">
+            <div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/RaneOneRelease.jpg" alt="Rane One DJ controller">
+                </div>
+                <div class="tech-container-text">Rane Drops All in One Controller for the perfect DJ performance</div>
+            </div>
+            <div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/RolandJuno60.jpg" alt="Roland Juno-60 synthesizer">
+                </div>
+                <div class="tech-container-text">Roland Adds the Juno-60 to their collection of synths</div>
+            </div><div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/AppleAirpodMax.jpg" alt="Apple over-ear headphones Airpod Max">
+                </div>
+                <div class="tech-container-text">Apple launches first over-ear headphones AirPod Max</div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <a id="software"></a>
+        <div class="header">
+            <h2>Software</h2>
+        </div>
+
+        <div class="tech-row-one">
+            <div class="tech-container-teaser-big">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/AbletonLive11Release.jpg" alt="Ableton Live 11 Digital Audio Workstation">
+                </div>
+                <div class="tech-container-text">Ableton Releases Latest Version of DAW: Live 11 on February 23rd</div>
+            </div>
+            <div class="tech-container-teaser-small">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/PioneerDJUpdate.jpg" alt="Pioneer DJ software graphic">
+                </div>
+                <div class="tech-container-text">Pioneer DJ updates support for new software and hardware</div>
+            </div>
+        </div>
+        <div class="tech-row-two">
+            <div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/Focusrite.png" alt="Focusrite gear">
+                </div>
+                <div class="tech-container-text">Focusrite to launch new Mixing Plugins, Powered by AI</div>
+            </div>
+            <div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/IzotopeNeoverb.jpg" alt="Izotope Neoverb plugin software">
+                </div>
+                <div class="tech-container-text">Izotope releases brand new "smart" reverb plugin: Neoverb </div>
+            </div><div class="tech-container-teaser">
+                <div class="tech-container-photo">
+                    <img src="Images/Tech/VirtualDJ.jpg" alt="VirtualDJ Software">
+                </div>
+                <div class="tech-container-text">VirtualDJ Drops AI powered features: Stem separation</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The popup-container div serves as a container that holds the popup for a subscription form. When the user clicks on the newsletter link in the footer. The popup form is displayed. Inside the popup-box div contains a container for a graphic image for design purpose, as well as a container for all text/input elements -->
+
+    <div class="popup-container">
+        <div class="popup-box">
+            <div class="popup-imagebox">
+                <img src="Images/Footer/NewsletterGraphic.jpg" alt="Music Art Graphic">
+            </div>
+            <div class="popup-textbox">
+                <div class="popup-textbox-small-container">
+                    <div class="logo-box">
+                        <img src="Images/MusicMag/logoTransparentNoBorder.png" alt="MusicMag Logo">
+                    </div>
+                    <div class="popup-close-box" onclick="closePopup()">
+                        &#10005;
+                    </div>
+                    <div class="popup-textbox-text">
+                        Sign up for our Weekly Newsletter
+                    </div>
+                </div>
+                <div class="popup-textbox-big-container">
+                    <label for="name">Name :</label>
+                    <input id="name" class="input-field-1" name = "name" type="text">
+                    <br>
+                    <label for="email">Email :</label>
+                    <input id="email" class="input-field-2" name = "email" type="text">
+                </div>
+                <div class="popup-textbox-button-container">
+                    <input type="submit" onclick="subscribedMessage()" value="Suscribe">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The footer-container div, held inside the footer tag, is a container that holds various containers that align the elements inside them in a row. -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <a class="logo" href="index.html">
+                    <img src="Images/MusicMag/logo_transparent.png" alt="MusicMag Logo">
+                </a>
+            </div>
+            <div class="footer-row">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="tech.html">Tech</a>
+                <a href="features.html">Features</a>
+                <a href="top10.html">Top 10</a>
+                <a href="video.html">Video</a>
+            </div>
+            <div class="footer-row">
+                <a href="#newsletter" onclick="popup()">Newsletter</a>
+                <a href="#advertising">Advertising</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="socialMediaLink" class="footer-row">
+                <a href="#facebook">
+                    <img src="Images/Footer/facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="#instagram">
+                    <img src="Images/Footer/instagram.jpg" alt="Instagram Logo">
+                </a>
+                <a href="#twitter">
+                    <img src="Images/Footer/twitter.png" alt="Twitter Logo">
+                </a>
+                <a href="#youtube">
+                    <img src="Images/Footer/youtube.png" alt="Youtube Logo">
+                </a>
+            </div>
+            <div id="termsAndConditions" class="footer-row">
+                <p>
+                    Please read these conditions carefully before using the
+                    MusicMag website. By using the MusicMag website, you signify your agreement to be bound by these
+                    conditions. In addition, when you use any current or future MusicMag service, you will also be
+                    subject to the terms, guidelines and conditions applicable to that service. ("Terms").
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
